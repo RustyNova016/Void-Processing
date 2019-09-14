@@ -1,41 +1,30 @@
-# Compiled Lua sources
-luac.out
+# Created by https://www.gitignore.io/api/windows
+# Edit at https://www.gitignore.io/?templates=windows
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+# Dump file
+*.stackdump
 
-# Precompiled Headers
-*.gch
-*.pch
+# Folder config file
+[Dd]esktop.ini
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# Windows shortcuts
+*.lnk
 
+# End of https://www.gitignore.io/api/windows
