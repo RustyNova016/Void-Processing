@@ -1,0 +1,13 @@
+{
+    "factorio.versions": [
+        {
+            "name": "2.0.47",
+            "factorioPath": "/home/alephria/.steam/steam/steamapps/common/Factorio/bin/x64/factorio",
+            "active": true
+        }
+    ],
+    "Lua.workspace.userThirdParty": [
+        "/home/alephria/.config/Code/User/workspaceStorage/d0ac816d0b0a914e3142e8b0715df17f/justarandomgeek.factoriomod-debug/sumneko-3rd"
+    ],
+    "Lua.workspace.checkThirdParty": "ApplyInMemory"
+}
