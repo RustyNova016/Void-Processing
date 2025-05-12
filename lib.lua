@@ -46,4 +46,12 @@ end
 
 Public.order = function(name) return get_ordering(orders, name) end
 
+---Return the weight of an item from its rocket stack size,
+---assuming the rocket capacity is 1 ton
+---@param count number
+---@return number
+Public.rocket_stack_size = function(count)
+	return 1000000 / count
+end
+
 return Public

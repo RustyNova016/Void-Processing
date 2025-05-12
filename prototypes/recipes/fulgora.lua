@@ -11,7 +11,7 @@ local fulgora_condition = {
 data:extend({
     {
         type = "recipe",
-        name = "void-core-binding",
+        name = "void-core-base",
         category = "electromagnetics",
         energy_required = 10,
         enabled = true,

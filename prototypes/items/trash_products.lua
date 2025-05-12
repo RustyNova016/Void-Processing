@@ -14,7 +14,7 @@ data:extend({
         drop_sound = base_item_sounds.low_density_inventory_move,
     },
 
-    lib.merge(data.raw.item["promethium-asteroid-chunk"], {
+    {
         name = "void-promethium",
         stack_size = 50,
         icon = lib.icon("void-promethium"),
@@ -23,9 +23,7 @@ data:extend({
         inventory_move_sound = base_item_sounds.low_density_inventory_move,
         pick_sound = base_item_sounds.low_density_inventory_pickup,
         drop_sound = base_item_sounds.low_density_inventory_move,
-        weight = 10 * kg
-
-    }),
+    },
 
     {
         type = "item",
@@ -37,6 +35,5 @@ data:extend({
         inventory_move_sound = base_item_sounds.science_inventory_move,
         pick_sound = base_item_sounds.science_inventory_pickup,
         drop_sound = base_item_sounds.science_inventory_move,
-        weight = 5 * kg
     },
 })

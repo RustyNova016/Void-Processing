@@ -9,7 +9,8 @@ data:extend({
         order = "a-b-a",
         pictures = { { size = 32, filename = lib.icon("void-bacteria") } },
         spoil_ticks = 30 * second,
-        spoil_result = "unstable-void-matter"
+        spoil_result = "unstable-void-matter",
+        weight = "nil"
     }),
 
     {
@@ -22,6 +23,5 @@ data:extend({
         inventory_move_sound = base_item_sounds.low_density_inventory_move, --TODO
         pick_sound = base_item_sounds.low_density_inventory_pickup, --TODO
         drop_sound = base_item_sounds.low_density_inventory_move,
-        weight = 10 * kg
     },
 })
