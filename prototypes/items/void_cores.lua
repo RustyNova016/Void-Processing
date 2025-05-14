@@ -7,6 +7,7 @@ local base_core = {
     subgroup = "void-cores",
     default_import_location = "nauvis",
     stack_size = 1,
+    auto_recycle = false
 }
 
 data:extend({
@@ -34,18 +35,19 @@ data:extend({
                 }
             }
         },
+        subgroup = "void-cores",
         order = "a-a",
     }),
 
-    lib.merge(base_core, {
-        name = "void-core-pristine-spent",
-        icon = lib.icon("test"),
-        order = "b-a",
-    }),
+    -- lib.merge(base_core, {
+    --     name = "void-core-pristine-spent",
+    --     icon = lib.icon("test"),
+    --     order = "b-a",
+    -- }),
 
-    lib.merge(base_core, {
-        name = "void-core-inert",
-        icon = lib.icon("test"),
-        order = "a-z",
-    }),
+    -- lib.merge(base_core, {
+    --     name = "void-core-inert",
+    --     icon = lib.icon("test"),
+    --     order = "a-z",
+    -- }),
 })

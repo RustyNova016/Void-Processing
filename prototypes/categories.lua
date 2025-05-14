@@ -24,20 +24,26 @@ data:extend({
     },
     {
         type = "item-subgroup",
-        name = "void-processes",
+        name = "intermediaries",
         group = "void-processing",
-        order = "q"
+        order = "b"
     },
     {
         type = "item-subgroup",
         name = "void-cores",
         group = "void-processing",
-        order = "r"
+        order = "c"
     },
     {
         type = "item-subgroup",
         name = "void-trash",
         group = "void-processing",
-        order = "r"
+        order = "d"
+    },
+    {
+        type = "item-subgroup",
+        name = "void-conversion",
+        group = "void-processing",
+        order = "e"
     },
 })

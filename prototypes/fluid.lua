@@ -66,15 +66,15 @@ data:extend({
         icon = lib.icon_fluid("fluoroketone")
     },
 
-    {
-        type = "fluid",
-        name = "fluoroketone-super-hot",
-        icon = lib.icon("test"),
-        subgroup = "fluid",
-        order = "b[new-fluid]-e[aquilo]-f[fluoroketone-hot]",
-        default_temperature = 1500,
-        heat_capacity = "1kJ",
-        base_color = { 0.3, 0.3, 0.10 },
-        flow_color = { 0.4, 0.7, 0.35 },
-    },
+    -- {
+    --     type = "fluid",
+    --     name = "fluoroketone-super-hot",
+    --     icon = lib.icon("test"),
+    --     subgroup = "fluid",
+    --     order = "b[new-fluid]-e[aquilo]-f[fluoroketone-hot]",
+    --     default_temperature = 1500,
+    --     heat_capacity = "1kJ",
+    --     base_color = { 0.3, 0.3, 0.10 },
+    --     flow_color = { 0.4, 0.7, 0.35 },
+    -- },
 })

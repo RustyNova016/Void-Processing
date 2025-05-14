@@ -11,6 +11,7 @@ data:extend({
         inventory_move_sound = base_item_sounds.low_density_inventory_move,
         pick_sound = base_item_sounds.low_density_inventory_pickup,
         drop_sound = base_item_sounds.low_density_inventory_move,
+        auto_recycle = false
     }),
 
     {
@@ -25,7 +26,8 @@ data:extend({
         drop_sound = base_item_sounds.science_inventory_move,
         spoil_ticks = 5 * minute,
         spoil_result = "promethium-void-culture-dead",
-        weight = lib.rocket_stack_size(20)
+        weight = lib.rocket_stack_size(20),
+        auto_recycle = false
     },
 
     {
@@ -38,7 +40,8 @@ data:extend({
         inventory_move_sound = base_item_sounds.science_inventory_move,
         pick_sound = base_item_sounds.science_inventory_pickup,
         drop_sound = base_item_sounds.science_inventory_move,
-        weight = 10 * kg
+        weight = 10 * kg,
+        auto_recycle = false
     },
 
     {
@@ -51,7 +54,8 @@ data:extend({
         inventory_move_sound = base_item_sounds.science_inventory_move,
         pick_sound = base_item_sounds.science_inventory_pickup,
         drop_sound = base_item_sounds.science_inventory_move,
-        weight = lib.rocket_stack_size(50)
+        weight = lib.rocket_stack_size(50),
+        auto_recycle = false
     },
 
     {
@@ -66,6 +70,7 @@ data:extend({
         drop_sound = base_item_sounds.science_inventory_move,
         spoil_ticks = 10 * second,
         spoil_result = "void-core-base-cracked",
+        auto_recycle = false
     },
 
     {
@@ -78,5 +83,6 @@ data:extend({
         inventory_move_sound = base_item_sounds.science_inventory_move,
         pick_sound = base_item_sounds.science_inventory_pickup,
         drop_sound = base_item_sounds.science_inventory_move,
+        auto_recycle = false
     },
 })

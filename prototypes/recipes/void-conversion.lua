@@ -20,6 +20,8 @@ data:extend({
                 shift = { 4, 4 }
             },
         },
+        subgroup = "void-conversion",
+        order = "a",
         ingredients = {
             { type = "fluid", name = "petroleum-gas", amount = 500 }
         },
@@ -45,6 +47,8 @@ data:extend({
                 shift = { 4, 4 }
             },
         },
+        subgroup = "void-conversion",
+        order = "b",
         ingredients = {
             { type = "item", name = "bioflux",       amount = 1 },
             { type = "item", name = "void-bacteria", amount = 1 },
@@ -80,6 +84,8 @@ data:extend({
                 shift = { 4, 4 }
             },
         },
+        subgroup = "void-conversion",
+        order = "c",
         ingredients = {
             { type = "item", name = "rocket-fuel", amount = 1 }
         },
@@ -105,6 +111,8 @@ data:extend({
                 shift = { 4, 4 }
             },
         },
+        subgroup = "void-conversion",
+        order = "d",
         ingredients = {
             { type = "item", name = "unstable-void-matter", amount = 1 },
         },

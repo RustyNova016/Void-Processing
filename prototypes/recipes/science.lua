@@ -1,22 +1,14 @@
 local lib = require("lib")
-
-local space_conditions = {
-    {
-        max = 0,
-        min = 0,
-        property = "gravity"
-    }
-}
+local conditions = require("prototypes.surface_conditions")
 
 data:extend({
-
     {
         type = "recipe",
         name = "void-science-pack",
         category = "void-crafting",
         energy_required = 30,
         icon = lib.icon("void-science-pack"),
-        surface_condition = space_conditions,
+        surface_condition = conditions.space,
         allow_productivity = true,
         enabled = true,
         ingredients = {
