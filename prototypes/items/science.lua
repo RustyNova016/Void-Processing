@@ -13,7 +13,7 @@ data:extend({
         pick_sound = base_item_sounds.low_density_inventory_pickup,         --TODO
         drop_sound = base_item_sounds.low_density_inventory_move,
     },
-    
+
     {
         type = "tool",
         name = "void-science-pack",

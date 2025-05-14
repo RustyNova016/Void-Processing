@@ -1,6 +1,43 @@
 local lib = require("lib")
 local asteroid_util = require "__space-age__.prototypes.planet.asteroid-spawn-definitions"
 
+local parent_ratio = { 3, 2, 1, 0 }
+local muluna_ratio = { 1, 1, 1, 0 }
+
+local muluna_asteroids =
+{
+    has_promethium_asteroids   = true,
+    probability_on_range_chunk =
+    {
+        { position = 0.1,   probability = 0,     angle_when_stopped = asteroid_util.chunk_angle },
+        { position = 0.83,  probability = 0.001,     angle_when_stopped = asteroid_util.chunk_angle },
+        { position = 0.85,  probability = 0.015, angle_when_stopped = asteroid_util.chunk_angle },
+        { position = 0.866, probability = 0,     angle_when_stopped = asteroid_util.chunk_angle },
+        { position = 0.9,   probability = 0,     angle_when_stopped = asteroid_util.chunk_angle },
+    },
+    -- probability_on_range_medium =
+    -- {
+    --     { position = 0.8, probability = 0,     angle_when_stopped = asteroid_util.medium_angle },
+    --     { position = 0.9, probability = 0.015, angle_when_stopped = asteroid_util.medium_angle },
+    --     { position = 0.9, probability = 0,     angle_when_stopped = asteroid_util.medium_angle }
+    -- },
+    -- probability_on_range_big    =
+    -- {
+    --     { position = 0.8, probability = 0,     angle_when_stopped = asteroid_util.big_angle },
+    --     { position = 0.9, probability = 0.015, angle_when_stopped = asteroid_util.big_angle },
+    --     { position = 0.9, probability = 0,     angle_when_stopped = asteroid_util.big_angle }
+    -- },
+    -- probability_on_range_huge   =
+    -- {
+    --     { position = 0.1, probability = asteroid_util.system_edge_huge, angle_when_stopped = asteroid_util.huge_angle },
+    --     { position = 0.9,   probability = 0.111,                          angle_when_stopped = asteroid_util.huge_angle }
+    -- },
+    type_ratios                =
+    {
+        { position = 0.1, ratios = { 3, 5, 2, 0 } },
+        { position = 0.9, ratios = { 5, 3, 8, 0.40 } },
+    }
+}
 
 
 local to_black_hole_asteroids =
@@ -61,8 +98,8 @@ local to_shattered_asteroids =
     },
     probability_on_range_huge   =
     {
-        { position = 0.10,  probability = asteroid_util.system_edge_huge, angle_when_stopped = asteroid_util.huge_angle },
-        { position = 0.999, probability = 0.111,                          angle_when_stopped = asteroid_util.huge_angle }
+        { position = 0.10,  probability = 0.010, angle_when_stopped = asteroid_util.huge_angle },
+        { position = 0.999, probability = 0.111, angle_when_stopped = asteroid_util.huge_angle }
     },
 
     type_ratios                 =
@@ -87,7 +124,7 @@ data:extend({
         label_orientation = 0.15,
         asteroid_spawn_influence = 1,
         draw_orbit = false,
-        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.black_hole_asteroids, 0.9)
+        --asteroid_spawn_definitions = asteroid_util.spawn_definitions(muluna_asteroids, 0.9)
     },
     {
         type = "space-connection",
@@ -97,7 +134,7 @@ data:extend({
         to = "black-hole",
         order = "j",
         length = 150000,
-        asteroid_spawn_definitions = asteroid_util.spawn_definitions(to_black_hole_asteroids)
+        asteroid_spawn_definitions = asteroid_util.spawn_definitions(muluna_asteroids)
     },
     {
         type = "space-connection",
@@ -107,6 +144,6 @@ data:extend({
         to = "black-hole",
         order = "k",
         length = 3900000,
-        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.shattered_planet_trip)
+        asteroid_spawn_definitions = asteroid_util.spawn_definitions(muluna_asteroids)
     }
 })
