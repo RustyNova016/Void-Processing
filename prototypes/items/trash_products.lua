@@ -9,9 +9,9 @@ data:extend({
         icon = lib.icon("unstable-void-matter"),
         subgroup = "void-processes",
         order = lib.order("unstable-void-matter"),
-        inventory_move_sound = base_item_sounds.low_density_inventory_move, --TODO
-        pick_sound = base_item_sounds.low_density_inventory_pickup,         --TODO
-        drop_sound = base_item_sounds.low_density_inventory_move,
+        inventory_move_sound = base_item_sounds.raw_fish_inventory_move, --TODO
+        pick_sound = base_item_sounds.raw_fish_inventory_pickup,         --TODO
+        drop_sound = base_item_sounds.raw_fish_inventory_move,
         auto_recycle = false
     },
 
@@ -39,5 +39,17 @@ data:extend({
         pick_sound = base_item_sounds.science_inventory_pickup,
         drop_sound = base_item_sounds.science_inventory_move,
         auto_recycle = false
+    },
+
+    {
+        type = "item",
+        name = "void-core-base-cracked",
+        stack_size = 10,
+        icon = lib.icon("void-core-base"),
+        subgroup = "void-processes",
+        order = "a-a-f",
+        inventory_move_sound = base_item_sounds.science_inventory_move,
+        pick_sound = base_item_sounds.science_inventory_pickup,
+        drop_sound = base_item_sounds.science_inventory_move,
     },
 })

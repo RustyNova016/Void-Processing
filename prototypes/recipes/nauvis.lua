@@ -30,4 +30,24 @@ data:extend({
         },
         main_product = "void-core-chunk"
     },
+
+    {
+        type = "recipe",
+        name = "void-core-base-cracked-recycling",
+        category = "chemistry",
+        energy_required = 5,
+        order = "e[bacteria]-c[infusing]-a[iron]",
+        surface_condition = nauvis_condition,
+        allow_productivity = true,
+        enabled = true,
+        ingredients = {
+            { type = "item",  name = "void-core-base-cracked", amount = 1 },
+            { type = "fluid", name = "sulfuric-acid", amount = 15 }
+        },
+        results = {
+            { type = "item", name = "void-core-chunk",        amount_min = 0, amount_max = 3 },
+            { type = "item", name = "unstable-void-matter",   amount_min = 0, amount_max = 10 },
+        },
+        main_product = "void-core-chunk"
+    },
 })

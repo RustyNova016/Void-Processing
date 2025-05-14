@@ -9,25 +9,6 @@ local fulgora_condition = {
 }
 
 data:extend({
-    {
-        type = "recipe",
-        name = "void-core-base",
-        category = "electromagnetics",
-        energy_required = 10,
-        enabled = true,
-        surface_condition = fulgora_condition,
-        icon = lib.icon("void-core-base"),
-        ingredients = {
-            { type = "item",  name = "void-core-chunk",        amount = 5 },
-            { type = "fluid", name = "electrolyte",            amount = 15, ignored_by_stats = 10 },
-            { type = "fluid", name = "semi-destabilized-void", amount = 20 }
-        },
-        results = {
-            { type = "item",  name = "void-core-base", amount = 1,  ignored_by_productivity = 1 },
-            { type = "fluid", name = "electrolyte",    amount = 10, ignored_by_stats = 10,      ignored_by_productivity = 10 },
-        },
-        main_product = "void-core-base"
-    },
 
     ----------------- Recycling
     {

@@ -1,8 +1,6 @@
 local lib = require("lib")
 
 data:extend({
-
-
     {
         type = "recipe",
         name = "lithium-holmium-alloy",
@@ -62,30 +60,6 @@ data:extend({
         },
         results = {
             { type = "fluid", name = "fluoroketone-cold", amount = 10, ignored_by_stats = 10 },
-        }
-    },
-
-    {
-        type = "recipe",
-        name = "lukewarm-fluoroketone-cooling-bak",
-        category = "cryogenics",
-        energy_required = 10,
-        icon = lib.icon("test"),
-        auto_recycle = false,
-        ingredients = {
-            { type = "fluid", name = "fluoroketone", amount = 10, ignored_by_stats = 10 }
-        },
-        results = {
-            { type = "fluid", name = "fluoroketone-cold", amount = 10, ignored_by_stats = 10 },
-        },
-        allow_productivity = false,
-        enabled = false,
-        crafting_machine_tint =
-        {
-            primary = { r = 0.455, g = 0.837, b = 0.563, a = 1.000 },    -- #73d58fff
-            secondary = { r = 0.398, g = 0.732, b = 0.681, a = 1.000 },  -- #65baadff
-            tertiary = { r = 0.337, g = 0.306, b = 0.306, a = 1.000 },   -- #554e4eff
-            quaternary = { r = 0.436, g = 0.743, b = 0.711, a = 1.000 }, -- #6fbdb5ff
         }
     },
 })

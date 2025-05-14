@@ -5,12 +5,16 @@ This features late game challenges where your interplanetary logistics skills wi
 
 Your reward? Master the art of quality products with a final quality tier, and boost your science production with a favorable alternative to quality cycling
 
+- ✔️ Compatible with any save
+- ✔️ No yet another planet mod
+- ✔️ No content dependancies
+- ✔️ AI less
+- ❌ Won't laught at you for not finishing space age
+
 ## Development progress
 
 Currently, only part one is complete, which focuses on creating void cores.
 The two other parts will focus on science production, and then that science's technology
-
-
 
 ## Credits
 

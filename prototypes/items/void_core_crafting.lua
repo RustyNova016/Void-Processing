@@ -35,9 +35,9 @@ data:extend({
         icon = lib.icon("void-crystals"),
         subgroup = "void-processes",
         order = "a-a-c",
-        inventory_move_sound = base_item_sounds.low_density_inventory_move,
-        pick_sound = base_item_sounds.low_density_inventory_pickup,
-        drop_sound = base_item_sounds.low_density_inventory_move,
+        inventory_move_sound = base_item_sounds.science_inventory_move,
+        pick_sound = base_item_sounds.science_inventory_pickup,
+        drop_sound = base_item_sounds.science_inventory_move,
         weight = 10 * kg
     },
 
@@ -48,9 +48,23 @@ data:extend({
         icon = lib.icon("void-core-chunk"),
         subgroup = "void-processes",
         order = "a-a-d",
-        inventory_move_sound = base_item_sounds.low_density_inventory_move,
-        pick_sound = base_item_sounds.low_density_inventory_pickup,
-        drop_sound = base_item_sounds.low_density_inventory_move,
+        inventory_move_sound = base_item_sounds.science_inventory_move,
+        pick_sound = base_item_sounds.science_inventory_pickup,
+        drop_sound = base_item_sounds.science_inventory_move,
+    },
+
+    {
+        type = "item",
+        name = "void-core-base-heated",
+        stack_size = 10,
+        icon = lib.icon("test"),
+        subgroup = "void-processes",
+        order = "a-a-e",
+        inventory_move_sound = base_item_sounds.science_inventory_move,
+        pick_sound = base_item_sounds.science_inventory_pickup,
+        drop_sound = base_item_sounds.science_inventory_move,
+        spoil_ticks = 10 * second,
+        spoil_result = "void-core-base-cracked",
     },
 
     {
@@ -59,9 +73,9 @@ data:extend({
         stack_size = 10,
         icon = lib.icon("void-core-base"),
         subgroup = "void-processes",
-        order = "a-a-e",
-        inventory_move_sound = base_item_sounds.low_density_inventory_move,
-        pick_sound = base_item_sounds.low_density_inventory_pickup,
-        drop_sound = base_item_sounds.low_density_inventory_move,
+        order = "a-a-f",
+        inventory_move_sound = base_item_sounds.science_inventory_move,
+        pick_sound = base_item_sounds.science_inventory_pickup,
+        drop_sound = base_item_sounds.science_inventory_move,
     },
 })

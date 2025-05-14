@@ -1,6 +1,8 @@
 return {
     void_core_crafting = {
-        "crushed-promethium"
+        "crushed-promethium",
+        "promethium-void-culture",
+        "void-crystals"
     },
     void_core_type = {},
     trash_items = {

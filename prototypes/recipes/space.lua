@@ -15,7 +15,7 @@ data:extend({
         enabled = true,
         order = "b-a-d",
         surface_condition = space_conditions,
-        energy_required = 8, -- time to craft in seconds (at crafting speed 1)
+        energy_required = 8,
         icon = lib.icon("test"),
         ingredients = {
             { type = "item", name = "promethium-asteroid-chunk", amount = 1 },
