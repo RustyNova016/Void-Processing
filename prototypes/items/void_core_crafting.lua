@@ -11,7 +11,6 @@ data:extend({
         inventory_move_sound = base_item_sounds.low_density_inventory_move,
         pick_sound = base_item_sounds.low_density_inventory_pickup,
         drop_sound = base_item_sounds.low_density_inventory_move,
-        weight = 10 * kg
     }),
 
     {
@@ -26,7 +25,7 @@ data:extend({
         drop_sound = base_item_sounds.science_inventory_move,
         spoil_ticks = 5 * minute,
         spoil_result = "promethium-void-culture-dead",
-        weight = 19 * kg
+        weight = lib.rocket_stack_size(20)
     },
 
     {

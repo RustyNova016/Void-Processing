@@ -6,7 +6,6 @@ local base_core = {
     icon_size = 64,
     subgroup = "void-cores",
     default_import_location = "nauvis",
-    weight = 20 * 1000,
     stack_size = 1,
 }
 

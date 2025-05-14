@@ -12,9 +12,11 @@ data:extend({
         inventory_move_sound = base_item_sounds.low_density_inventory_move, --TODO
         pick_sound = base_item_sounds.low_density_inventory_pickup,         --TODO
         drop_sound = base_item_sounds.low_density_inventory_move,
+        auto_recycle = false
     },
 
     {
+        type = "item",
         name = "void-promethium",
         stack_size = 50,
         icon = lib.icon("void-promethium"),
@@ -23,6 +25,7 @@ data:extend({
         inventory_move_sound = base_item_sounds.low_density_inventory_move,
         pick_sound = base_item_sounds.low_density_inventory_pickup,
         drop_sound = base_item_sounds.low_density_inventory_move,
+        auto_recycle = false
     },
 
     {
@@ -35,5 +38,6 @@ data:extend({
         inventory_move_sound = base_item_sounds.science_inventory_move,
         pick_sound = base_item_sounds.science_inventory_pickup,
         drop_sound = base_item_sounds.science_inventory_move,
+        auto_recycle = false
     },
 })

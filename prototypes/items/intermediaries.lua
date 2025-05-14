@@ -10,7 +10,7 @@ data:extend({
         pictures = { { size = 32, filename = lib.icon("void-bacteria") } },
         spoil_ticks = 30 * second,
         spoil_result = "unstable-void-matter",
-        weight = "nil"
+        weight = "nil",
     }),
 
     {

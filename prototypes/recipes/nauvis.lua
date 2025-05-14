@@ -14,19 +14,20 @@ data:extend({
         name = "void-core-chunk",
         category = "chemistry",
         energy_required = 5,
-        icon = lib.icon("test"),
         order = "e[bacteria]-c[infusing]-a[iron]",
+        surface_condition = nauvis_condition,
         allow_productivity = true,
         enabled = true,
         ingredients = {
-            { type = "item",  name = "void-crystals", amount = 2 },
+            { type = "item",  name = "void-crystals", amount = 1 },
             { type = "fluid", name = "sulfuric-acid", amount = 10 }
         },
         results = {
-            { type = "item", name = "void-core-chunk",      amount = 1 },
-            { type = "item", name = "crystalization-plating", amount = 1, probability = 0.5 },
-            { type = "item", name = "void-promethium",      amount = 1, probability = 0.25 },
-            { type = "item", name = "unstable-void-matter", amount = 1, probability = 0.1 },
-        }
+            { type = "item", name = "void-core-chunk",        amount_min = 1, amount_max = 2 },
+            { type = "item", name = "crystalization-plating", amount = 1,     probability = 0.5 },
+            { type = "item", name = "void-promethium",        amount = 1,     probability = 0.25 },
+            { type = "item", name = "unstable-void-matter",   amount = 1,     probability = 0.1 },
+        },
+        main_product = "void-core-chunk"
     },
 })

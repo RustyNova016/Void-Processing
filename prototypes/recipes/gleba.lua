@@ -16,7 +16,7 @@ data:extend({
         energy_required = 5, -- time to craft in seconds (at crafting speed 1)
         icon = lib.icon("void-culture"),
         ingredients = {
-            { type = "item",  name = "crushed-promethium",     amount = 5 },
+            { type = "item",  name = "crushed-promethium",     amount = 3 },
             { type = "item",  name = "void-bacteria",          amount = 2 },
             { type = "fluid", name = "semi-destabilized-void", amount = 50 }
         },
@@ -35,13 +35,13 @@ data:extend({
         icon = lib.icon("test"),
         ingredients = {
             { type = "item",  name = "promethium-void-culture-dead", amount = 1 },
-            { type = "item",  name = "crushed-promethium",           amount = 3 },
+            { type = "item",  name = "crushed-promethium",           amount = 1 },
             { type = "item",  name = "void-bacteria",                amount = 2 },
             { type = "fluid", name = "semi-destabilized-void",       amount = 25 }
         },
         results = {
-            { type = "item", name = "promethium-void-culture", amount = 1,     ignored_by_productivity = 1 },
-            { type = "item", name = "void-promethium",         amount_min = 0, amount_max = 3 }
+            { type = "item", name = "promethium-void-culture", amount = 1, ignored_by_productivity = 1 },
+            { type = "item", name = "void-promethium",         amount = 1, probability = 0.5 }
         },
         allow_productivity = true,
         auto_recycle = true,

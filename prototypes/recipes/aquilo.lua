@@ -24,7 +24,7 @@ data:extend({
             { type = "fluid", name = "semi-destabilized-void",  amount = 20 }
         },
         results = {
-            { type = "item",  name = "void-crystals",        amount_min = 0, amount_max = 3 },
+            { type = "item",  name = "void-crystals",        amount_min = 0, amount_max = 3, },
             { type = "fluid", name = "void-crystals-slurry", amount_min = 0, amount_max = 25 },
             { type = "fluid", name = "fluoroketone-hot",     amount = 90,    ignored_by_stats = 90, ignored_by_productivity = 90 }
         },

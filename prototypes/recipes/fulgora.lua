@@ -25,7 +25,8 @@ data:extend({
         results = {
             { type = "item",  name = "void-core-base", amount = 1,  ignored_by_productivity = 1 },
             { type = "fluid", name = "electrolyte",    amount = 10, ignored_by_stats = 10,      ignored_by_productivity = 10 },
-        }
+        },
+        main_product = "void-core-base"
     },
 
     ----------------- Recycling

@@ -6,6 +6,7 @@ require("recipes.any")
 require("recipes.vulcanus")
 require("recipes.fulgora")
 require("recipes.space")
+require("recipes.nauvis")
 
 local lib = require("lib")
 

@@ -23,6 +23,7 @@ data:extend({
         results = {
             { type = "item", name = "void-core-pristine", amount = 1, ignored_by_productivity = 1 },
             { type = "item", name = "stone",              amount = 10 },
-        }
+        },
+        main_product = "void-core-pristine"
     }
 })
