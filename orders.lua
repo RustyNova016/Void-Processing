@@ -5,6 +5,9 @@ return {
         "void-crystals"
     },
     void_core_type = {},
+    science_crafting = {
+        "void-data-disk"
+    },
     trash_items = {
         "unstable-void-matter",
         "void-promethium",
