@@ -46,7 +46,8 @@ data:extend({
         results = {
             { type = "item",  name = "crystalization-plating", amount = 1 },
             { type = "fluid", name = "fluoroketone",           amount = 10, ignored_by_productivity = 1 },
-        }
+        },
+        main_product = "crystalization-plating"
     },
 
     {
@@ -54,7 +55,7 @@ data:extend({
         name = "lukewarm-fluoroketone-cooling",
         category = "cryogenics",
         energy_required = 10,
-        icon = lib.icon("test"),
+        icon = lib.icon("fluid/fluoroketone-cooling"),
         ingredients = {
             { type = "fluid", name = "fluoroketone", amount = 10, ignored_by_stats = 10 }
         },

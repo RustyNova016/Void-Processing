@@ -2,6 +2,20 @@ local lib = require("lib")
 local conditions = require("prototypes.surface_conditions")
 
 data:extend({
+    lib.merge(data.raw["recipe"]["oxide-asteroid-crushing"], {
+        type = "recipe",
+        name = "promethium-crushing",
+        icon = lib.icon("promethium-crushing"),
+        enabled = true,
+        order = "b-a-d",
+        surface_condition = conditions.space,
+        energy_required = 8,
+        ingredients = {
+            { type = "item", name = "promethium-asteroid-chunk", amount = 1 },
+        },
+        results = { { type = "item", name = "crushed-promethium", amount = 2 } },
+        allow_productivity = true,
+    }),
     {
         type = "recipe",
         name = "void-core-base-heated",

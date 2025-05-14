@@ -6,6 +6,7 @@ require("recipes.any")
 require("recipes.fulgora")
 require("recipes.space")
 require("recipes.nauvis")
+require("recipes.void-core-crafting")
 
 local lib = require("lib")
 

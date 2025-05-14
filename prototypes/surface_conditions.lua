@@ -1,5 +1,12 @@
 local conditions = {
-    vulcanus =  {
+    space = {
+        {
+            max = 0,
+            min = 0,
+            property = "gravity"
+        }
+    },
+    vulcanus = {
         {
             property = "pressure",
             min = 4000,
@@ -13,7 +20,7 @@ local conditions = {
             max = 99
         }
     }
-    
+
 }
 
 return conditions

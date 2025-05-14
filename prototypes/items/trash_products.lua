@@ -45,7 +45,7 @@ data:extend({
         type = "item",
         name = "void-core-base-cracked",
         stack_size = 10,
-        icon = lib.icon("void-core-base"),
+        icon = lib.icon("void-core-fractured"),
         subgroup = "void-processes",
         order = "a-a-f",
         inventory_move_sound = base_item_sounds.science_inventory_move,
