@@ -1,7 +1,11 @@
+-- Needs removing
+
 require("scripts.ordering")
 local orders = require("orders")
 
-local Public = {}
+local Public = {
+	globals = require("globals.mod")
+}
 
 function Public.merge(old, new)
 	old = util.table.deepcopy(old)

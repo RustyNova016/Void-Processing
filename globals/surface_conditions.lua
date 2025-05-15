@@ -1,4 +1,4 @@
-local conditions = {
+return {
     nauvis = {
         {
             property = "pressure",
@@ -41,7 +41,4 @@ local conditions = {
             max = 300
         }
     }
-
 }
-
-return conditions
