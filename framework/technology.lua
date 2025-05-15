@@ -21,7 +21,7 @@ local technology_add = {}
 ---@param count number
 ---@param ingredients ResearchIngredient[]
 ---@param time number
----@return TechnologyUnit
+---@return data.TechnologyUnit
 technology.cost = function(count, ingredients, time)
     return {
         count = count,
@@ -32,7 +32,7 @@ end
 
 ---Create an `unlock-recipe` effect
 ---@param recipe string
----@return Modifier
+---@return data.UnlockRecipeModifier
 technology.unlock_recipe = function(recipe)
     return {
         type = "unlock-recipe",
@@ -42,7 +42,7 @@ end
 
 ---Create multiple `unlock-recipe` effects
 ---@param recipes string[]
----@return Modifier[]
+---@return data.UnlockRecipeModifier[]
 technology.unlock_recipes = function(recipes)
     local effects = {}
 
