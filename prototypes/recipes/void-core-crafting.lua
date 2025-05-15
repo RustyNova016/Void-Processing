@@ -1,4 +1,4 @@
-local lib = require("lib2")
+local lib = require("lib")
 
 data:extend({
     lib.merge_tables(data.raw["recipe"]["oxide-asteroid-crushing"], {

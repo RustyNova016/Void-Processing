@@ -12,7 +12,7 @@ local base_core = {
 
 data:extend({
 
-    lib.merge(base_core, {
+    lib.merge_tables(base_core, {
         name = "void-core-pristine",
         icon = lib.icon("void-core"),
         pictures =

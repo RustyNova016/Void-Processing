@@ -5,7 +5,6 @@ require("recipes.trash-products")
 require("recipes.science")
 require("recipes.void-core-crafting")
 
-local lib = require("lib")
 
 data:extend({
     ------------------------------------------------------------------------------------ Entities

@@ -4,7 +4,7 @@ local pipe_pic = assembler3pipepictures()
 local pipecoverpic = pipecoverspictures()
 
 data:extend({
-    lib.merge(data.raw["assembling-machine"]["assembling-machine-3"], {
+    lib.merge_tables(data.raw["assembling-machine"]["assembling-machine-3"], {
         name = "void-assembler",
         icon = "__finely-crafted-graphics__/graphics/gravity-assembler/gravity-assembler-icon.png",
         icon_size = 64,

@@ -4,9 +4,6 @@ require("items.intermediaries")
 require("items.trash_products")
 require("items.science")
 
-local lib = require("lib")
-local base_item_sounds = require("__base__.prototypes.item_sounds")
-
 data:extend({
     {
         type = "item",
@@ -21,4 +18,3 @@ data:extend({
         place_result = "void-assembler",
     },
 })
-

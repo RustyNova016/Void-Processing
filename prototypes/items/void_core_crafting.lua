@@ -2,7 +2,7 @@ local lib = require("lib")
 local base_item_sounds = require("__base__.prototypes.item_sounds")
 
 data:extend({
-    lib.merge(data.raw.item["promethium-asteroid-chunk"], {
+    lib.merge_tables(data.raw.item["promethium-asteroid-chunk"], {
         name = "crushed-promethium",
         stack_size = 25,
         icon = lib.icon("crushed-promethium"),
@@ -26,7 +26,7 @@ data:extend({
         drop_sound = base_item_sounds.science_inventory_move,
         spoil_ticks = 5 * minute,
         spoil_result = "promethium-void-culture-dead",
-        weight = lib.rocket_stack_size(20),
+        weight = lib.utils.rocket_stack_size(20),
         auto_recycle = false
     },
 
@@ -54,7 +54,7 @@ data:extend({
         inventory_move_sound = base_item_sounds.science_inventory_move,
         pick_sound = base_item_sounds.science_inventory_pickup,
         drop_sound = base_item_sounds.science_inventory_move,
-        weight = lib.rocket_stack_size(50),
+        weight = lib.utils.rocket_stack_size(50),
         auto_recycle = false
     },
 

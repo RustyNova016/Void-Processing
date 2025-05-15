@@ -4,7 +4,7 @@ data:extend({
     {
         type = "fluid",
         name = "semi-destabilized-void",
-        icon = lib.icon_fluid("semi-destabilized-void"),
+        icon = lib.icon("fluid/semi-destabilized-void"),
         subgroup = "fluid",
         order = "c[void-factories]-a[main]-a[semi-destabilized-void]",
         default_temperature = 15,
@@ -45,7 +45,7 @@ data:extend({
     {
         type = "fluid",
         name = "void-crystals-slurry",
-        icon = lib.icon_fluid("void-crystal-slurry"),
+        icon = lib.icon("fluid/void-crystal-slurry"),
         subgroup = "fluid",
         order = "c[void-factories]-a[main]-b[semi-destabilized-void]",
         default_temperature = -15,
@@ -63,7 +63,7 @@ data:extend({
         heat_capacity = "1kJ",
         base_color = { 0.3, 0.3, 0.10 },
         flow_color = { 0.4, 0.7, 0.35 },
-        icon = lib.icon_fluid("fluoroketone")
+        icon = lib.icon("fluid/fluoroketone")
     },
 
     -- {

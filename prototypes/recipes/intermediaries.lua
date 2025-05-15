@@ -1,4 +1,4 @@
-local lib = require("lib2")
+local lib = require("lib")
 
 
 -- intermediary recipes

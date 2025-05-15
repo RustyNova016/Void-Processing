@@ -2,7 +2,7 @@ local lib = require("lib")
 local base_item_sounds = require("__base__.prototypes.item_sounds")
 
 data:extend({
-    lib.merge(data.raw.item["copper-bacteria"], {
+    lib.merge_tables(data.raw.item["copper-bacteria"], {
         name = "void-bacteria",
         icon = lib.icon("void-bacteria"),
         subgroup = "intermediaries",
