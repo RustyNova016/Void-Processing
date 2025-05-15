@@ -47,7 +47,7 @@ technology.unlock_recipes = function(recipes)
     local effects = {}
 
     for _, recipe in pairs(recipes) do
-        effects.insert(technology.unlock_recipe(recipe))
+        table.insert(effects, technology.unlock_recipe(recipe))
     end
 
     return effects

@@ -5,7 +5,6 @@ data:extend({
     {
         type = "tool",
         name = "void-science-pack",
-        localised_description = { "item-description.science-pack" },
         icon = lib.icon("void-science-pack"),
         subgroup = "science-pack",
         color_hint = { text = "M" },

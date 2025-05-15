@@ -4,7 +4,7 @@ data:extend({
     {
         type = "technology",
         name = "void-conversion-1",
-        icons = lib.icon("test"),
+        icon = lib.icon("test"),
         icon_size = 256,
         essential = true,
         effects = lib.technology.unlock_recipes({ "petroleum-destabilizing" }),

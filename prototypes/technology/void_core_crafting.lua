@@ -4,7 +4,7 @@ data:extend({
     {
         type = "technology",
         name = "promethium-crushing",
-        icons = lib.icon("test"),
+        icon = lib.icon("test"),
         icon_size = 256,
         essential = true,
         effects = lib.technology.unlock_recipes({ "promethium-crushing" }),

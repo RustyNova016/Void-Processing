@@ -1,5 +1,4 @@
-local lib = require("lib")
-local conditions = require("prototypes.surface_conditions")
+local lib = require("lib2")
 
 data:extend({
     {
@@ -8,7 +7,7 @@ data:extend({
         category = "void-crafting",
         energy_required = 30,
         icon = lib.icon("void-science-pack"),
-        surface_condition = conditions.space,
+        surface_condition = lib.globals.surface_conditions.space,
         allow_productivity = true,
         enabled = true,
         ingredients = {

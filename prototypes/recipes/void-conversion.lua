@@ -1,4 +1,4 @@
-local lib = require("lib")
+local lib = require("lib2")
 
 data:extend({
     {
@@ -14,7 +14,7 @@ data:extend({
                 shift = { -4, -4 }
             },
             {
-                icon = lib.icon_fluid("semi-destabilized-void"),
+                icon = lib.icon("fluid/semi-destabilized-void"),
                 icon_size = 64,
                 scale = 48.0 / 64,
                 shift = { 4, 4 }
@@ -41,7 +41,7 @@ data:extend({
                 shift = { -4, -4 }
             },
             {
-                icon = lib.icon_fluid("semi-destabilized-void"),
+                icon = lib.icon("fluid/semi-destabilized-void"),
                 icon_size = 64,
                 scale = 48.0 / 64,
                 shift = { 4, 4 }
@@ -78,7 +78,7 @@ data:extend({
                 shift = { -4, -4 }
             },
             {
-                icon = lib.icon_fluid("semi-destabilized-void"),
+                icon = lib.icon("fluid/semi-destabilized-void"),
                 icon_size = 64,
                 scale = 48.0 / 64,
                 shift = { 4, 4 }
@@ -105,7 +105,7 @@ data:extend({
                 shift = { -4, -4 }
             },
             {
-                icon = lib.icon_fluid("semi-destabilized-void"),
+                icon = lib.icon("fluid/semi-destabilized-void"),
                 icon_size = 64,
                 scale = 48.0 / 64,
                 shift = { 4, 4 }

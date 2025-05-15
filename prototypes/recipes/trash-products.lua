@@ -1,5 +1,4 @@
-local lib = require("lib")
-local conditions = require("prototypes.surface_conditions")
+local lib = require("lib2")
 
 -- Recycling for void trash
 
@@ -8,7 +7,7 @@ data:extend({
         type = "recipe",
         name = "void-promethium-cleaning",
         category = "centrifuging",
-        surface_condition = conditions.fulgora,
+        surface_condition = lib.globals.surface_conditions.fulgora,
         energy_required = 5,
         icons =
         {
@@ -37,7 +36,7 @@ data:extend({
         }
     },
 
-    lib.merge(data.raw["recipe"]["pentapod-egg"], {
+    lib.merge_tables(data.raw["recipe"]["pentapod-egg"], {
         type = "recipe",
         name = "promethium-void-culture-revitalize",
         enabled = true,
@@ -58,7 +57,7 @@ data:extend({
         allow_productivity = true,
         auto_recycle = true,
         result_is_always_fresh = true,
-        surface_condition = conditions.gleba,
+        surface_condition = lib.globals.surface_conditions.gleba,
     }),
 
     {
@@ -66,7 +65,7 @@ data:extend({
         name = "void-crystal-slurry-recycling",
         category = "centrifuging",
         energy_required = 10,
-        surface_condition = conditions.fulgora,
+        surface_condition = lib.globals.surface_conditions.fulgora,
         icons =
         {
             {
@@ -116,7 +115,7 @@ data:extend({
         energy_required = 5,
         subgroup = "void-trash",
         order = "d",
-        surface_condition = conditions.nauvis,
+        surface_condition = lib.globals.surface_conditions.nauvis,
         allow_productivity = true,
         enabled = true,
         ingredients = {

@@ -1,15 +1,14 @@
-local lib = require("lib")
-local conditions = require("prototypes.surface_conditions")
+local lib = require("lib2")
 
 data:extend({
-    lib.merge(data.raw["recipe"]["oxide-asteroid-crushing"], {
+    lib.merge_tables(data.raw["recipe"]["oxide-asteroid-crushing"], {
         type = "recipe",
         name = "promethium-crushing",
         icon = lib.icon("promethium-crushing"),
         enabled = true,
         subgroup = "void-core-crafting",
         order = "a",
-        surface_condition = conditions.space,
+        surface_condition = lib.globals.surface_conditions.space,
         energy_required = 8,
         ingredients = {
             { type = "item", name = "promethium-asteroid-chunk", amount = 1 },
@@ -18,7 +17,7 @@ data:extend({
         allow_productivity = true,
     }),
 
-    lib.merge(data.raw["recipe"]["pentapod-egg"], {
+    lib.merge_tables(data.raw["recipe"]["pentapod-egg"], {
         type = "recipe",
         name = "promethium-void-culture",
         enabled = true,
@@ -35,7 +34,7 @@ data:extend({
         allow_productivity = true,
         auto_recycle = true,
         result_is_always_fresh = true,
-        surface_condition = conditions.gleba,
+        surface_condition = lib.globals.surface_conditions.gleba,
     }),
 
     {
@@ -45,7 +44,7 @@ data:extend({
         icon = lib.icon("void-crystals"),
         subgroup = "void-core-crafting",
         order = "c",
-        surface_conditions = conditions.aquilo,
+        surface_conditions = lib.globals.surface_conditions.aquilo,
         enabled = true,
         ingredients = {
             { type = "item",  name = "promethium-void-culture", amount = 1 },
@@ -76,7 +75,7 @@ data:extend({
         energy_required = 5,
         subgroup = "void-core-crafting",
         order = "d",
-        surface_condition = conditions.nauvis,
+        surface_condition = lib.globals.surface_conditions.nauvis,
         allow_productivity = true,
         enabled = true,
         ingredients = {
@@ -96,7 +95,7 @@ data:extend({
         name = "void-core-base-heated",
         category = "metallurgy",
         energy_required = 10,
-        surface_condition = conditions.vulcanus,
+        surface_condition = lib.globals.surface_conditions.vulcanus,
         subgroup = "void-core-crafting",
         order = "e",
         ingredients = {
@@ -134,7 +133,7 @@ data:extend({
         category = "electromagnetics",
         energy_required = 10,
         enabled = true,
-        surface_condition = conditions.fulgora,
+        surface_condition = lib.globals.surface_conditions.fulgora,
         subgroup = "void-core-crafting",
         order = "g",
         ingredients = {

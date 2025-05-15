@@ -8,7 +8,8 @@ local lib = {
 
     -- === utils ===
     utils = utils,
-    icon = utils.icon
+    icon = utils.icon,
+    merge_tables = utils.merge_tables
 }
 
 return lib

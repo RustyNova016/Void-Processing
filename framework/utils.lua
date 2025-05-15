@@ -9,7 +9,7 @@ local utils = {}
 function utils.merge_tables(old, new)
     -- Deepcopy to prevent reference shenanigans
     old = util.table.deepcopy(old)
-    new = util.table.deepcopy(old)
+    new = util.table.deepcopy(new)
 
     for k, v in pairs(new) do
         if v == "nil" then
@@ -31,7 +31,7 @@ end
 function utils.merge_arrays(old, new)
     -- Deepcopy to prevent reference shenanigans
     old = util.table.deepcopy(old)
-    new = util.table.deepcopy(old)
+    new = util.table.deepcopy(new)
 
     for _, v in pairs(new) do
         old.insert(v)
