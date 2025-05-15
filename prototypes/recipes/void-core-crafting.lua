@@ -80,6 +80,7 @@ data:extend({
         enabled = true,
         ingredients = {
             { type = "item",  name = "void-crystals", amount = 1 },
+            { type = "item",  name = "uranium-235",   amount = 2 },
             { type = "fluid", name = "sulfuric-acid", amount = 10 }
         },
         results = {
