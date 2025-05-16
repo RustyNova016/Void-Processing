@@ -1,6 +1,5 @@
 local lib = require("lib")
 
-add_recipe_at_location_handler("firearm-magazine", "nauvis")
 
 
 ---Initialize the controls for a recipe that can only be crafted at a specific space location
@@ -17,7 +16,11 @@ end
 ---@param recipe string
 ---@param space_location_name string
 function enable_recipe_at_location(platform, recipe, space_location_name)
-    local disable = platform.space_location.name ~= space_location_name
+    local disable = true
+    if platform.space_location ~= nil and platform.space_location.name ~= space_location_name then
+        disable = false
+    end
+
     toggle_recipe_on_surface(platform.surface, recipe, disable)
 end
 
@@ -29,10 +32,12 @@ function toggle_recipe_on_surface(surface, recipe, disable)
     local entities = surface.find_entities_filtered({})
 
     for _, entity in pairs(entities) do
-        if entity.get_recipe() == recipe then
+        if entity.type == "assembling-machine" and entity.get_recipe() == recipe then
             local behaviour = entity.get_control_behavior()
             ---@diagnostic disable-next-line: inject-field
             behaviour.disable = disable
         end
     end
 end
+
+add_recipe_at_location_handler("firearm-magazine", "nauvis")
