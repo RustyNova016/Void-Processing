@@ -6,10 +6,14 @@ This features late game challenges where your interplanetary logistics skills wi
 Your reward? Master the art of quality products with a final quality tier, and boost your science production with a favorable alternative to quality cycling
 
 - ✔️ Compatible with any save
-- ✔️ No yet another planet mod
 - ✔️ No content dependancies
-- ✔️ AI less
-- ❌ Won't laught at you for not finishing space age
+- ✔️ Not yet another planet mod
+- ✔️ No AI used
+- ❌ Won't laugh at you for not finishing space age
+
+## Compatibility
+
+For mod compatibility, please check [the compatibility list](./COMPATIBILITY.md). If a mod isn't on there and is incompatible, please make an issue!
 
 ## Development progress
 
