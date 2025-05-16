@@ -130,4 +130,24 @@ data:extend({
             { type = "fluid", name = "fluoroketone-cold", amount = 10, ignored_by_stats = 10 },
         }
     },
+
+    {
+        type = "recipe",
+        name = "void-control-unit",
+        category = "void-crafting-or-fluid-crafting",
+        energy_required = 30,
+        icon = lib.icon("void-control-unit"),
+        subgroup = "intermediaries",
+        order = "e",
+        enabled = false,
+        ingredients = {
+            { type = "item", name = "quantum-processor", amount = 1 },
+            { type = "item", name = "tungsten-plate",    amount = 1 },
+            { type = "item", name = "superconductor",    amount = 1 },
+        },
+        results = {
+            { type = "item", name = "void-control-unit", amount = 1 },
+        },
+        main_product = "void-control-unit"
+    },
 })

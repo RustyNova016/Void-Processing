@@ -10,6 +10,18 @@ data:extend({
         name = "void-crafting-or-fluid-crafting",
     },
     {
+        type = "recipe-category",
+        name = "void-condensing",
+    },
+    {
+        type = "recipe-category",
+        name = "black-hole-condensing",
+    },
+    {
+        type = "recipe-category",
+        name = "void-synthesis",
+    },
+    {
         type = "item-group",
         name = "void-processing",
         order = "f-a",
@@ -36,14 +48,26 @@ data:extend({
     },
     {
         type = "item-subgroup",
-        name = "void-trash",
+        name = "void-science",
         group = "void-processing",
         order = "d"
     },
     {
         type = "item-subgroup",
-        name = "void-conversion",
+        name = "void-trash",
         group = "void-processing",
         order = "e"
+    },
+    {
+        type = "item-subgroup",
+        name = "void-conversion",
+        group = "void-processing",
+        order = "f"
+    },
+    {
+        type = "item-subgroup",
+        name = "data-disks",
+        group = "void-processing",
+        order = "g"
     },
 })

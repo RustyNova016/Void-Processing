@@ -5,6 +5,7 @@ local utils = require("framework.utils")
 local lib = {
     technology = require("framework.technology"),
     globals = require("globals.mod"),
+    space_connection = require("framework.space_connection"),
 
     -- === utils ===
     utils = utils,
