@@ -1,0 +1,1 @@
+require("prototypes.planets.space-locations")
