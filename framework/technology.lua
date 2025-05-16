@@ -11,12 +11,6 @@ local technology_base = {
 ---@field name string
 local technology_add = {}
 
--- ---Add a technology
--- ---@param new_data technology_add
--- technology.add = function(new_data)
-
--- end
-
 ---Create the technology science cost. Set this as the "unit" field
 ---@param count number
 ---@param ingredients ResearchIngredient[]

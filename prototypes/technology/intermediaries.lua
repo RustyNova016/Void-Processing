@@ -6,7 +6,7 @@ data:extend({
         name = "crystalization-plating",
         icon = lib.utils.technology_icon("crystalization-plating_256"),
         icon_size = 256,
-        essential = true,
+        essential = false,
         effects = lib.technology.unlock_recipes({
             "lithium-holmium-alloy",
             "crystalization-plating",
@@ -14,5 +14,29 @@ data:extend({
         }),
         prerequisites = { "promethium-science-pack" },
         unit = lib.technology.cost(1000, lib.globals.technology.require_all_cryogenic, 60)
+    },
+    {
+        type = "technology",
+        name = "void-control-unit",
+        icon = lib.utils.technology_icon("test"),
+        icon_size = 256,
+        essential = false,
+        effects = lib.technology.unlock_recipes({
+            "void-control-unit",
+        }),
+        prerequisites = { "promethium-science-pack" },
+        unit = lib.technology.cost(1000, lib.globals.technology.require_all_promethium, 60)
+    },
+    {
+        type = "technology",
+        name = "void-data-disk",
+        icon = lib.utils.technology_icon("test"),
+        icon_size = 256,
+        essential = false,
+        effects = lib.technology.unlock_recipes({
+            "void-data-disk",
+        }),
+        prerequisites = { "promethium-science-pack" },
+        unit = lib.technology.cost(1000, lib.globals.technology.require_all_promethium, 60)
     }
 })

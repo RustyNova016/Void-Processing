@@ -10,6 +10,10 @@ data:extend({
         name = "void-crafting-or-fluid-crafting",
     },
     {
+        type = "recipe-category",
+        name = "void-condensing",
+    },
+    {
         type = "item-group",
         name = "void-processing",
         order = "f-a",
@@ -45,5 +49,11 @@ data:extend({
         name = "void-conversion",
         group = "void-processing",
         order = "e"
+    },
+    {
+        type = "item-subgroup",
+        name = "data-disks",
+        group = "void-processing",
+        order = "f"
     },
 })
