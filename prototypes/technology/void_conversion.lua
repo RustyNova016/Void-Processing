@@ -5,17 +5,18 @@ data:extend({
         type = "technology",
         name = "void-conversion-1",
         icons = {
-            filename = "__space-age__/graphics/icons/petroleum-gas.png",
-            icon_size = 64,
-            scale = 48.0 / 64,
-            shift = { -16, -16 }
-        },
-        {
-            icon = lib.icon("fluid/semi-destabilized-void"),
-            icon_size = 64,
-            scale = 48.0 / 64,
-            shift = { 16, 16 }
-        },
+            {
+                icon = "__base__/graphics/icons/fluid/petroleum-gas.png",
+                icon_size = 64,
+                scale = 48.0 / 64,
+                shift = { -4, -4 }
+            },
+            {
+                icon = lib.icon("fluid/semi-destabilized-void"),
+                icon_size = 64,
+                scale = 48.0 / 64,
+                shift = { 4, 4 }
+            }, },
         essential = true,
         effects = lib.technology.unlock_recipes({ "petroleum-destabilizing" }),
         prerequisites = { "promethium-science-pack" },
@@ -24,18 +25,18 @@ data:extend({
     {
         type = "technology",
         name = "void-conversion-2",
-        icons = {
-            filename = "__space-age__/graphics/icons/bioflux.png",
+        icons = { {
+            icon = "__space-age__/graphics/icons/bioflux.png",
             icon_size = 64,
             scale = 48.0 / 64,
-            shift = { -16, -16 }
+            shift = { -4, -4 }
         },
-        {
-            icon = lib.icon("fluid/semi-destabilized-void"),
-            icon_size = 64,
-            scale = 48.0 / 64,
-            shift = { 16, 16 }
-        },
+            {
+                icon = lib.icon("fluid/semi-destabilized-void"),
+                icon_size = 64,
+                scale = 48.0 / 64,
+                shift = { 4, 4 }
+            }, },
         essential = true,
         effects = lib.technology.unlock_recipes({ "bioflux-destabilizing" }),
         prerequisites = { "void-conversion-1" },
@@ -44,19 +45,19 @@ data:extend({
     {
         type = "technology",
         name = "void-conversion-3",
-        icons = {
+        icons = { {
 
-            filename = "__space-age__/graphics/icons/rocket-fuel.png",
+            icon = "__base__/graphics/icons/rocket-fuel.png",
             icon_size = 64,
             scale = 48.0 / 64,
-            shift = { -16, -16 }
+            shift = { -4, -4 }
         },
-        {
-            icon = lib.icon("fluid/semi-destabilized-void"),
-            icon_size = 64,
-            scale = 48.0 / 64,
-            shift = { 16, 16 }
-        },
+            {
+                icon = lib.icon("fluid/semi-destabilized-void"),
+                icon_size = 64,
+                scale = 48.0 / 64,
+                shift = { 4, 4 }
+            }, },
         essential = true,
         effects = lib.technology.unlock_recipes({ "rocket-fuel-destabilizing" }),
         prerequisites = { "void-conversion-2" },
