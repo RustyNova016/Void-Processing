@@ -19,7 +19,7 @@ data:extend({
         type = "item",
         name = "crystalization-plating",
         stack_size = 50,
-        icon = lib.icon("crystalization-plating"), --TODO
+        icon = lib.icon("crystalization-plating"),
         subgroup = "intermediaries",
         order = "c",
         inventory_move_sound = base_item_sounds.low_density_inventory_move, --TODO
