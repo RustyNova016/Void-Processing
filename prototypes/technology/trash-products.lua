@@ -6,7 +6,7 @@ data:extend({
         name = "unstable-void-matter-destabilizing",
         icons = {
             {
-                icon = "__base__/graphics/icons/fluid/petroleum-gas.png",
+                icon = lib.icon("unstable-void-matter"),
                 icon_size = 64,
                 scale = 48.0 / 64,
                 shift = { -4, -4 }
