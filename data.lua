@@ -1,4 +1,2 @@
-require("prototypes.fluids")
-require("prototypes.item")
-require("prototypes.recipe")
-require("prototypes.technology")
+require("prototypes.mod")
+require("base-data-updates")

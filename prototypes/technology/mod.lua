@@ -1,0 +1,6 @@
+require("prototypes.technology.void_conversion")
+require("prototypes.technology.void_core_crafting")
+require("prototypes.technology.intermediaries")
+require("prototypes.technology.trash-products")
+require("prototypes.technology.science")
+require("prototypes.technology.infinite")
