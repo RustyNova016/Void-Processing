@@ -18,7 +18,7 @@ For mod compatibility, please check [the compatibility list](./COMPATIBILITY.md)
 ## Development progress
 
 Currently, only part one is complete, which focuses on creating void cores.
-The two other parts will focus on science production, and then that science's technology
+The two other parts will focus on science production, and then that science's technology (aka quality)
 
 ## Credits
 
