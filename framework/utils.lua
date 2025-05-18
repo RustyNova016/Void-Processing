@@ -64,6 +64,16 @@ utils.add_recipe_category = function(base_entity, new_categories)
     )
 end
 
+---Add a new science pack to a lab
+---@param base_entity string
+---@param new_science (data.RecipeCategoryID)[]
+utils.add_science_to_lab = function(base_entity, new_science)
+    data.raw["lab"][base_entity].inputs = utils.merge_arrays(
+        data.raw["lab"][base_entity].inputs,
+        new_science
+    )
+end
+
 ---Return the weight of an item from its rocket stack size,
 ---assuming the rocket capacity is 1 ton
 ---@param count number
