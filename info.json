@@ -1,20 +1,20 @@
 {
-    "name": "VoidProcessing",
-    "version": "0.1.4",
-    "title": "Void Processing",
-    "author": "RustyNova",
-    "description": "Unleash the power of the void!",
-    "factorio_version": "2.0",
-    "dependencies": [
-        "base >= 2.0.29",
-        "space-age >= 2.0.29",
-        "finely-crafted-graphics >= 1.1.0"
-    ],
-    "quality_required": false,
-    "rail_bridges_required": false,
-    "space_travel_required": true,
-    "spoiling_required": true,
-    "freezing_required": false,
-    "segmented_units_required": false,
-    "expansion_shaders_required": false
+  "name": "VoidProcessing",
+  "version": "1.0.0",
+  "title": "Void Processing",
+  "author": "RustyNova",
+  "description": "Unleash the power of the void!",
+  "factorio_version": "2.0",
+  "dependencies": [
+    "base >= 2.0.29",
+    "space-age >= 2.0.29",
+    "finely-crafted-graphics >= 1.1.0"
+  ],
+  "quality_required": false,
+  "rail_bridges_required": false,
+  "space_travel_required": true,
+  "spoiling_required": true,
+  "freezing_required": false,
+  "segmented_units_required": false,
+  "expansion_shaders_required": false
 }
