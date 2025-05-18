@@ -1,0 +1,13 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2025-05-18
+  Features:
+    - rework the mod
+  Bugfixes:
+    - crash on startup
+    - Rename mod back to void processing
+    - technology icon placements
+  Changes:
+    - bump version
+    - finalise for release
+    - update license and readme
