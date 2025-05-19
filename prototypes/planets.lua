@@ -62,7 +62,7 @@ local to_shattered_asteroids =
     probability_on_range_huge   =
     {
         { position = 0.10,  probability = asteroid_util.system_edge_huge, angle_when_stopped = asteroid_util.huge_angle },
-        { position = 0.999, probability = 0.111,                          angle_when_stopped = asteroid_util.huge_angle }
+        { position = 0.999, probability = 0.112,                          angle_when_stopped = asteroid_util.huge_angle }
     },
 
     type_ratios                 =
