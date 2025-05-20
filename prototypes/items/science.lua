@@ -4,7 +4,7 @@ local base_item_sounds = require("__base__.prototypes.item_sounds")
 data:extend({
     {
         type = "tool",
-        name = "void-science-pack",
+        name = lib.prefix("void-science-pack"),
         icon = lib.icon("void-science-pack"),
         subgroup = "science-pack",
         color_hint = { text = "M" },

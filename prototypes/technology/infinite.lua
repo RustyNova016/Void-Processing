@@ -12,7 +12,7 @@ data:extend({
             recipe = "promethium-crushing",
             change = 0.1
         } },
-        prerequisites = { "void-science-pack" },
+        prerequisites = { lib.prefix("void-science-pack") },
         unit = {
             count_formula = "1.2^L*1000",
             ingredients = lib.globals.technology.require_all_void,

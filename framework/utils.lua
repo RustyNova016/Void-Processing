@@ -1,3 +1,5 @@
+local gloabals = require("globals.mod")
+
 local utils = {}
 
 ---Merge two tables together
@@ -80,6 +82,10 @@ end
 ---@return number
 utils.rocket_stack_size = function(count)
     return 1000000 / count
+end
+
+utils.prefix = function(name) 
+    return gloabals.mod_prefix .. "-" .. name
 end
 
 return utils
