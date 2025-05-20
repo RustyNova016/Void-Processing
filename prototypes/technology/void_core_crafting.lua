@@ -71,7 +71,6 @@ data:extend({
         effects = lib.technology.unlock_recipes({
             "void-core-activation",
             "void-assembler",
-            "void-pylon"
         }),
         prerequisites = { "void-core-base" },
         unit = lib.technology.cost(3000, lib.globals.technology.require_all_promethium, 60)
