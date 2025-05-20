@@ -42,6 +42,6 @@ return {
         { "agricultural-science-pack",    1 },
         { "cryogenic-science-pack",       1 },
         { "promethium-science-pack",      1 },
-        { "void-science-pack",            1 }
+        { "voidp-void-science-pack",      1 }
     }
 }

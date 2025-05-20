@@ -1,0 +1,24 @@
+{
+    "item": [
+        [
+            "void-science-pack",
+            "voidp-void-science-pack"
+        ]
+    ],
+    "recipe": [
+        [
+            "void-science-pack",
+            "voidp-void-science-pack"
+        ],
+        [
+            "void-science-pack-recycling",
+            "voidp-void-science-pack-recycling"
+        ]
+    ],
+    "technology": [
+        [
+            "void-science-pack",
+            "voidp-void-science-pack"
+        ]
+    ]
+}
