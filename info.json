@@ -8,7 +8,8 @@
   "dependencies": [
     "base >= 2.0.29",
     "space-age >= 2.0.29",
-    "finely-crafted-graphics >= 1.1.0"
+    "finely-crafted-graphics >= 1.1.0",
+    "PlanetsLib >= 1.4.1"
   ],
   "quality_required": false,
   "rail_bridges_required": false,
