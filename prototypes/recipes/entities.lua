@@ -31,5 +31,15 @@ data:extend({
             { type = "fluid", name = "semi-destabilized-void", amount = 100 },
         },
         results = { { type = "item", name = "void-pylon", amount = 1 } }
+    },
+    {
+        type = "recipe",
+        name = "void-pylon-tuning",
+        enabled = false,
+        energy_required = 15,
+        icon = "__finely-crafted-graphics__/graphics/gravity-assembler/gravity-assembler-icon.png",
+        category = "void-crafting",
+        ingredients = { { type = "item", name = "void-pylon", amount = 1 } },
+        results = { { type = "item", name = "void-pylon-tuned", amount = 1 } }
     }
 })

@@ -14,6 +14,10 @@ data:extend({
         name = "void-condensing",
     },
     {
+        type = "recipe-category",
+        name = "black-hole-condensing",
+    },
+    {
         type = "item-group",
         name = "void-processing",
         order = "f-a",
