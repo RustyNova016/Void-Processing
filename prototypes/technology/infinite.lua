@@ -19,6 +19,8 @@ data:extend({
             time = 120
         },
         max_level = "infinite",
-        upgrade = true
+        upgrade = true,
+        ---@diagnostic disable-next-line: assign-type-mismatch
+        planetslib_ensure_all_packs_from_vanilla_lab = true
     }
 })

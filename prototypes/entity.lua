@@ -1,6 +1,8 @@
 local lib = require("lib")
 
+---@diagnostic disable-next-line: undefined-global
 local pipe_pic = assembler3pipepictures()
+---@diagnostic disable-next-line: undefined-global
 local pipecoverpic = pipecoverspictures()
 
 data:extend({

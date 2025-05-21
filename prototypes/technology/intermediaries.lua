@@ -13,6 +13,8 @@ data:extend({
             "lukewarm-fluoroketone-cooling"
         }),
         prerequisites = { "promethium-science-pack" },
-        unit = lib.technology.cost(1000, lib.globals.technology.require_all_cryogenic, 60)
+        unit = lib.technology.cost(1000, lib.globals.technology.require_all_cryogenic, 60),
+        ---@diagnostic disable-next-line: assign-type-mismatch
+        planetslib_ensure_all_packs_from_vanilla_lab = true
     }
 })

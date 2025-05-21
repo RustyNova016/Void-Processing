@@ -20,7 +20,9 @@ data:extend({
         essential = true,
         effects = lib.technology.unlock_recipes({ "petroleum-destabilizing" }),
         prerequisites = { "promethium-science-pack" },
-        unit = lib.technology.cost(500, lib.globals.technology.require_all_promethium, 60)
+        unit = lib.technology.cost(500, lib.globals.technology.require_all_promethium, 60),
+---@diagnostic disable-next-line: assign-type-mismatch
+        planetslib_ensure_all_packs_from_vanilla_lab = true
     },
     {
         type = "technology",
@@ -40,7 +42,9 @@ data:extend({
         essential = true,
         effects = lib.technology.unlock_recipes({ "bioflux-destabilizing" }),
         prerequisites = { "void-conversion-1" },
-        unit = lib.technology.cost(1000, lib.globals.technology.require_all_promethium, 60)
+        unit = lib.technology.cost(1000, lib.globals.technology.require_all_promethium, 60),
+---@diagnostic disable-next-line: assign-type-mismatch
+        planetslib_ensure_all_packs_from_vanilla_lab = true
     },
     {
         type = "technology",
@@ -61,6 +65,8 @@ data:extend({
         essential = true,
         effects = lib.technology.unlock_recipes({ "rocket-fuel-destabilizing" }),
         prerequisites = { "void-conversion-2" },
-        unit = lib.technology.cost(1500, lib.globals.technology.require_all_promethium, 60)
+        unit = lib.technology.cost(1500, lib.globals.technology.require_all_promethium, 60),
+---@diagnostic disable-next-line: assign-type-mismatch
+        planetslib_ensure_all_packs_from_vanilla_lab = true
     }
 })
