@@ -18,7 +18,7 @@ data:extend({
     {
         type = "technology",
         name = "void-control-unit",
-        icon = lib.utils.technology_icon("test"),
+        icon = lib.utils.technology_icon("void-control-unit_256"),
         icon_size = 256,
         essential = false,
         effects = lib.technology.unlock_recipes({
@@ -30,7 +30,7 @@ data:extend({
     {
         type = "technology",
         name = "void-data-disk",
-        icon = lib.utils.technology_icon("test"),
+        icon = lib.utils.technology_icon("void-data-disk_256"),
         icon_size = 256,
         essential = false,
         effects = lib.technology.unlock_recipes({

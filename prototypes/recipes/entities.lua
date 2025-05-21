@@ -22,7 +22,7 @@ data:extend({
         name = "void-pylon",
         enabled = false,
         energy_required = 15,
-        icon = "__finely-crafted-graphics__/graphics/gravity-assembler/gravity-assembler-icon.png",
+        icon = lib.icon("void-pylon"),
         category = "void-crafting",
         ingredients = {
             { type = "item",  name = "tungsten-plate",         amount = 2 },
@@ -34,12 +34,13 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "void-pylon-tuning",
+        name = "void-pylon-tuned",
         enabled = false,
         energy_required = 15,
-        icon = "__finely-crafted-graphics__/graphics/gravity-assembler/gravity-assembler-icon.png",
+        icon = lib.icon("void-pylon"),
         category = "void-crafting",
         ingredients = { { type = "item", name = "void-pylon", amount = 1 } },
-        results = { { type = "item", name = "void-pylon-tuned", amount = 1 } }
+        results = { { type = "item", name = "void-pylon-tuned", amount = 1 } },
+        main_product = "void-pylon-tuned"
     }
 })

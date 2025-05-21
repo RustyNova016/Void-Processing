@@ -121,7 +121,7 @@ data:extend({
     {
         type = "assembling-machine",
         name = "void-pylon",
-        icon = lib.icon("test"),
+        icon = lib.icon("void-pylon"),
         flags = { "placeable-neutral", "placeable-player", "player-creation" },
 
         icon_size = 64,
@@ -194,7 +194,7 @@ data:extend({
     {
         type = "furnace",
         name = "void-pylon-tuned",
-        icon = lib.icon("test"),
+        icon = lib.icon("void-pylon"),
         flags = { "placeable-neutral", "placeable-player", "player-creation" },
 
         icon_size = 64,

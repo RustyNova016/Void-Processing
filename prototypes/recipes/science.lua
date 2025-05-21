@@ -11,6 +11,7 @@ data:extend({
         enabled = false,
         ingredients = {
             { type = "item", name = "void-data-disk-black-hole", amount = 1 },
+            { type = "fluid", name = "semi-destabilized-void",    amount = 250 },
         },
         results = {
             { type = "item", name = "gibberish-data-a", amount = 1, probability = 0.1 }, --todo: Set random at load time. For funsies :)

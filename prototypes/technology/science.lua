@@ -13,7 +13,7 @@ data:extend({
             "gibberish-data-processing-1",
             "gibberish-data-processing-2"
         }),
-        prerequisites = { "void-core-activation" },
+        prerequisites = { "black-hole-discovery", "void-data-disk" },
         unit = lib.technology.cost(1500, lib.globals.technology.require_all_promethium, 90)
     },
     {

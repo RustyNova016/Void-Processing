@@ -32,11 +32,11 @@ data:extend({
         type = "item",
         name = "void-control-unit",
         stack_size = 50,
-        icon = lib.icon("test"),
+        icon = lib.icon("void-control-unit"),
         subgroup = "intermediaries",
         order = "d",
-        inventory_move_sound = base_item_sounds.low_density_inventory_move,     --TODO
-        pick_sound = base_item_sounds.low_density_inventory_pickup,             --TODO
+        inventory_move_sound = base_item_sounds.low_density_inventory_move, --TODO
+        pick_sound = base_item_sounds.low_density_inventory_pickup,         --TODO
         drop_sound = base_item_sounds.low_density_inventory_move,
     },
 })

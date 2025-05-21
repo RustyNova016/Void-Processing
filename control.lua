@@ -38,7 +38,7 @@ local lib = require("lib")
 
 
 ---Initialize the controls for an entity that can only work at a specific space location
----@param entity string
+---@param entity_name string
 ---@param space_location_name string
 function add_entity_at_location_handler(entity, space_location_name)
     script.on_event(defines.events.on_space_platform_changed_state, function(event)
@@ -48,22 +48,22 @@ end
 
 ---Only enable a recipe if a space platform is at a specific space location
 ---@param platform LuaSpacePlatform
----@param entity string
+---@param entity_name string
 ---@param space_location_name string
-function enable_entity_at_location(platform, entity, space_location_name)
+function enable_entity_at_location(platform, entity_name, space_location_name)
     local disable = platform.space_location == nil or platform.space_location.name ~= space_location_name
-    toggle_entity_on_surface(platform.surface, entity, disable)
+    toggle_entity_on_surface(platform.surface, entity_name, disable)
 end
 
 ---Enable or disable a recipe on a whole surface
 ---@param surface LuaSurface
----@param entity string
+---@param entity_name string
 ---@param disable boolean
-function toggle_entity_on_surface(surface, entity, disable)
+function toggle_entity_on_surface(surface, entity_name, disable)
     local entities = surface.find_entities_filtered({ type = { "assembling-machine", "furnace", "rocket-silo" } })
 
     for _, entity in pairs(entities) do
-        if entity.name == entity then 
+        if entity.name == entity_name then
             entity.disabled_by_script = disable
         end
     end

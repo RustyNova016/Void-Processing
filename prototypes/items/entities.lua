@@ -18,7 +18,7 @@ data:extend({
     {
         type = "item",
         name = "void-pylon",
-        icon = lib.icon("test"),
+        icon = lib.icon("void-pylon"),
         icon_size = 64,
         subgroup = "production-machine",
         order = "h",
@@ -30,7 +30,7 @@ data:extend({
     {
         type = "item",
         name = "void-pylon-tuned",
-        icon = lib.icon("test"),
+        icon = lib.icon("void-pylon"),
         icon_size = 64,
         subgroup = "production-machine",
         order = "i",

@@ -21,7 +21,7 @@ data:extend({
     {
         type = "recipe",
         name = "void-data-disk-black-hole",
-        category = "void-condensing",
+        category = "black-hole-condensing",
         energy_required = 90,
         icons = {
             {

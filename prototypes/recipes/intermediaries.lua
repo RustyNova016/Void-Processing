@@ -136,14 +136,14 @@ data:extend({
         name = "void-control-unit",
         category = "cryogenics",
         energy_required = 30,
-        icon = lib.icon("test"),
+        icon = lib.icon("void-control-unit"),
         subgroup = "intermediaries",
         order = "e",
         enabled = false,
         ingredients = {
-            { type = "item",  name = "quantum-processor", amount = 1 },
+            { type = "item", name = "quantum-processor", amount = 1 },
             { type = "item", name = "tungsten-plate",    amount = 1 },
-            { type = "item",  name = "superconductor",    amount = 1 },
+            { type = "item", name = "superconductor",    amount = 1 },
         },
         results = {
             { type = "item", name = "void-control-unit", amount = 1 },

@@ -1,10 +1,11 @@
 local lib = require("lib")
 
+
 data:extend({
     {
         type = "technology",
-        name = "approach-discovery",
-        icon = lib.icon("test"),
+        name = "black-hole-discovery",
+        icons = util.technology_icon_constant_planet(lib.utils.technology_icon("black-hole_256")),
         icon_size = 256,
         essential = false,
         effects = {
@@ -12,20 +13,8 @@ data:extend({
                 type = "unlock-space-location",
                 space_location = "black-hole-approach",
                 use_icon_overlay_constant = true
-            }
-        },
-        prerequisites = { "void-core-activation", "void-control-unit" },
-        unit = lib.technology.cost(500, lib.globals.technology.require_all_promethium, 60),
-        ---@diagnostic disable-next-line: assign-type-mismatch
-        planetslib_ensure_all_packs_from_vanilla_lab = true
-    },
-    {
-        type = "technology",
-        name = "black-hole-discovery",
-        icon = lib.icon("test"),
-        icon_size = 256,
-        essential = false,
-        effects = {
+            },
+
             {
                 type = "unlock-space-location",
                 space_location = "black-hole",
@@ -33,9 +22,7 @@ data:extend({
             },
             lib.technology.unlock_recipe("void-pylon-tuned")
         },
-        prerequisites = { "void-core-activation", "void-control-unit" },
+        prerequisites = { "void-pylon" },
         unit = lib.technology.cost(2500, lib.globals.technology.require_all_promethium, 60),
-        ---@diagnostic disable-next-line: assign-type-mismatch
-        planetslib_ensure_all_packs_from_vanilla_lab = true
     },
 })

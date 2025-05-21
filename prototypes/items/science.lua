@@ -5,7 +5,7 @@ data:extend({
     {
         type = "item",
         name = "void-data",
-        stack_size = 50,
+        stack_size = 42,
         icon = lib.icon("test"), --TODO
         subgroup = "intermediaries",
         order = "e",
