@@ -5,7 +5,7 @@ data:extend({
         type = "technology",
         name = "promethium-productivity",
         icon = lib.icon("crushed-promethium"),
-        icon_size = 256,
+        icon_size = 64,
         essential = true,
         effects = { {
             type = "change-recipe-productivity",

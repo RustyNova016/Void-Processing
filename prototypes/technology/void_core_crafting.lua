@@ -5,7 +5,7 @@ data:extend({
         type = "technology",
         name = "promethium-crushing",
         icon = lib.icon("promethium-crushing"),
-        icon_size = 256,
+        icon_size = 64,
         essential = true,
         effects = lib.technology.unlock_recipes({ "promethium-crushing" }),
         prerequisites = { "promethium-science-pack" },
