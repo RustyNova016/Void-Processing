@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 2025-05-21
+  Compatibility:
+    - exotic space industries
+    - prevent planetlib to lock promethium behind void science
+---------------------------------------------------------------------------------------------------
 Version: 1.0.4
 Date: 2025-05-20
   Bugfixes:
