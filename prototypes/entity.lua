@@ -212,6 +212,8 @@ data:extend({
             usage_priority = "secondary-input",
             emissions_per_minute = { pollution = 4 }
         },
+        source_inventory_size = 1,
+        result_inventory_size = 1,
         crafting_speed = 1,
         corpse = "big-remnants",
         graphics_set = {

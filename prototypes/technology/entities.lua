@@ -10,7 +10,7 @@ data:extend({
         effects = lib.technology.unlock_recipes({
             "void-pylon"
         }),
-        prerequisites = { "void-science-pack" },
+        prerequisites = { lib.prefix("void-science-pack") },
         unit = lib.technology.cost(500, lib.globals.technology.require_all_promethium, 60),
         max_level = "infinite",
         upgrade = true
