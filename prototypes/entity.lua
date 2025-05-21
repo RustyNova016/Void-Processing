@@ -1,6 +1,8 @@
 local lib = require("lib")
 
+---@diagnostic disable-next-line: undefined-global
 local pipe_pic = assembler3pipepictures()
+---@diagnostic disable-next-line: undefined-global
 local pipecoverpic = pipecoverspictures()
 
 data:extend({
@@ -18,6 +20,7 @@ data:extend({
         },
         crafting_speed = 2,
         corpse = "big-remnants",
+        next_upgrade = "nil",
         graphics_set = {
             animation = {
                 layers = {
