@@ -196,7 +196,7 @@ data:extend({
         name = "void-pylon-tuned",
         icon = lib.icon("void-pylon"),
         flags = { "placeable-neutral", "placeable-player", "player-creation" },
-
+        surface_conditions = lib.globals.surface_conditions.space,
         icon_size = 64,
         selection_box = { { -1, -1 }, { 1, 1 } },
         collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
