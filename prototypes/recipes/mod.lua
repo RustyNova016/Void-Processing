@@ -1,0 +1,8 @@
+--require("void_cores.recipes")
+require("prototypes.recipes.void-conversion")
+require("prototypes.recipes.intermediaries")
+require("prototypes.recipes.trash-products")
+require("prototypes.recipes.science")
+require("prototypes.recipes.void-core-crafting")
+require("prototypes.recipes.entities")
+require("prototypes.recipes.data-disks")
