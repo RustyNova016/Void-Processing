@@ -9,7 +9,9 @@ data:extend({
         essential = true,
         effects = lib.technology.unlock_recipes({ "promethium-crushing" }),
         prerequisites = { "promethium-science-pack" },
-        unit = lib.technology.cost(500, lib.globals.technology.require_all_promethium, 60)
+        unit = lib.technology.cost(500, lib.globals.technology.require_all_promethium, 60),
+        ---@diagnostic disable-next-line: assign-type-mismatch
+        planetslib_ensure_all_packs_from_vanilla_lab = true
     },
     {
         type = "technology",
@@ -23,7 +25,9 @@ data:extend({
             "copper-bacteria-infusing"
         }),
         prerequisites = { "promethium-crushing", "void-conversion-1" },
-        unit = lib.technology.cost(1000, lib.globals.technology.require_all_promethium, 60)
+        unit = lib.technology.cost(1000, lib.globals.technology.require_all_promethium, 60),
+        ---@diagnostic disable-next-line: assign-type-mismatch
+        planetslib_ensure_all_packs_from_vanilla_lab = true
     },
     {
         type = "technology",
@@ -35,7 +39,9 @@ data:extend({
             "void-crystals",
         }),
         prerequisites = { "promethium-void-culture", "crystalization-plating" },
-        unit = lib.technology.cost(1500, lib.globals.technology.require_all_promethium, 60)
+        unit = lib.technology.cost(1500, lib.globals.technology.require_all_promethium, 60),
+        ---@diagnostic disable-next-line: assign-type-mismatch
+        planetslib_ensure_all_packs_from_vanilla_lab = true
     },
     {
         type = "technology",
@@ -47,7 +53,9 @@ data:extend({
             "void-core-chunk",
         }),
         prerequisites = { "void-crystals" },
-        unit = lib.technology.cost(2000, lib.globals.technology.require_all_promethium, 60)
+        unit = lib.technology.cost(2000, lib.globals.technology.require_all_promethium, 60),
+        ---@diagnostic disable-next-line: assign-type-mismatch
+        planetslib_ensure_all_packs_from_vanilla_lab = true
     },
     {
         type = "technology",
@@ -60,7 +68,9 @@ data:extend({
             "void-core-base"
         }),
         prerequisites = { "void-core-chunk" },
-        unit = lib.technology.cost(2500, lib.globals.technology.require_all_promethium, 60)
+        unit = lib.technology.cost(2500, lib.globals.technology.require_all_promethium, 60),
+        ---@diagnostic disable-next-line: assign-type-mismatch
+        planetslib_ensure_all_packs_from_vanilla_lab = true
     },
     {
         type = "technology",
@@ -72,6 +82,8 @@ data:extend({
             "void-core-activation"
         }),
         prerequisites = { "void-core-base" },
-        unit = lib.technology.cost(3000, lib.globals.technology.require_all_promethium, 60)
+        unit = lib.technology.cost(3000, lib.globals.technology.require_all_promethium, 60),
+        ---@diagnostic disable-next-line: assign-type-mismatch
+        planetslib_ensure_all_packs_from_vanilla_lab = true
     },
 })
