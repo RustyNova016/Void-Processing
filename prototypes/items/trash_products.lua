@@ -12,7 +12,8 @@ data:extend({
         inventory_move_sound = base_item_sounds.raw_fish_inventory_move, --TODO
         pick_sound = base_item_sounds.raw_fish_inventory_pickup,         --TODO
         drop_sound = base_item_sounds.raw_fish_inventory_move,
-        auto_recycle = false
+        auto_recycle = false,
+        weight = lib.utils.rocket_stack_size(100)
     },
 
     {

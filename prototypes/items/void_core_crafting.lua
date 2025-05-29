@@ -6,6 +6,7 @@ data:extend({
         name = "crushed-promethium",
         stack_size = 25,
         icon = lib.icon("crushed-promethium"),
+        icon_size = 64,
         subgroup = "void-core-crafting",
         order = "a",
         inventory_move_sound = base_item_sounds.low_density_inventory_move,

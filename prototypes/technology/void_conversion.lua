@@ -62,5 +62,26 @@ data:extend({
         effects = lib.technology.unlock_recipes({ "rocket-fuel-destabilizing" }),
         prerequisites = { "void-conversion-2" },
         unit = lib.technology.cost(1500, lib.globals.technology.require_all_promethium, 60)
+    },
+    {
+        type = "technology",
+        name = "void-conversion-4",
+        icons = { {
+
+            icon = "__space-age__/graphics/icons/fluid/thruster-fuel.png",
+            icon_size = 64,
+            scale = 48.0 / 64,
+            shift = { -4, -4 }
+        },
+            {
+                icon = lib.icon("fluid/semi-destabilized-void"),
+                icon_size = 64,
+                scale = 48.0 / 64,
+                shift = { 4, 4 }
+            }, },
+        essential = true,
+        effects = lib.technology.unlock_recipes({ "thruster-fuel-destabilizing" }),
+        prerequisites = { "void-conversion-3", "void-core-activation" },
+        unit = lib.technology.cost(2500, lib.globals.technology.require_all_promethium, 60)
     }
 })
