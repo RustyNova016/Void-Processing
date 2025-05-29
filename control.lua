@@ -51,6 +51,11 @@ end
 ---@param entity_name string
 ---@param space_location_name string
 function enable_entity_at_location(platform, entity_name, space_location_name)
+    -- The plateform may no have a surface on creation
+    if platform.surface == nil then
+        return
+    end
+
     local disable = platform.space_location == nil or platform.space_location.name ~= space_location_name
     toggle_entity_on_surface(platform.surface, entity_name, disable)
 end
