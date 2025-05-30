@@ -17,19 +17,25 @@ For mod compatibility, please check [the compatibility list](./COMPATIBILITY.md)
 
 ## Development progress
 
-Currently, only part one is complete, which focuses on creating void cores.
-The two other parts will focus on science production, and then that science's technology (aka quality)
+Currently, 2 out of 3 parts are done. There is still the quality cycling left to do, and hopefully done this decade.
 
 ## Credits
 
 - Hurricane for the void assembler and void synthetizer textures
 - [factorio-mod-template](https://github.com/fgardt/factorio-mod-template) for the CI
 
-## Reusing content
+## Licensing
 
-You can reuse all the content of this mod. This mean you can take part of it to create your own mod, or a direct fork of this mod. However, you respect those rules:
-- Non code assets use the factorio's asset policy. This means that you can only reuse them for factorio mods
-- Any usage must have a link back to this mod (You can stick them in the README like above and it will be fine)
+Since there is no special license to keep assets in the factorio community, this mod got a special type of licensing.
+
+The code is licensed under [MIT](https://choosealicense.com/licenses/mit/).
+
+Graphics and sounds are distributed under [GPLv3](https://choosealicense.com/licenses/gpl-3.0/), with some key points
+- Edited assets from factorio keep the Factorio's asset policy. This means that you can only reuse them for factorio mods
+- If you use / edit my assets in a factorio mod, only those assets are affected by GPLv3. Not the other assets used
 - Any assets not made for this mod (E.G. The void assembler) must respect the original author's policy
+- Usage of the assets outside of Factorio modding is forbidden (But you can still ask for permission :))
+
+I do not know how much legal foothold this licensing got, but please be respectful. And in any doubt, don't hesitate to contact me
 
 Assets can also be found [here](https://github.com/RustyNova016/Factorio-Assets)
