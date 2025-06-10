@@ -55,3 +55,4 @@ add_data_disk("black-hole", "a", "black-hole-icon")
 -- add_data_disk("copper-plate", "c")
 -- add_data_disk("plastic-bar", "d")
 -- add_data_disk("sulfur", "e")
+return add_data_disk

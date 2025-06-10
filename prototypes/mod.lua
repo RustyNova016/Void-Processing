@@ -6,3 +6,5 @@ require("prototypes.recipes.mod")
 require("prototypes.technology.mod")
 require("prototypes.planets.mod")
 require("prototypes.ambient-sounds")
+
+require("prototypes.void_disks.mod")

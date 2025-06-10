@@ -1,0 +1,1 @@
+require("prototypes.void_disks.items")
