@@ -74,4 +74,4 @@ function toggle_entity_on_surface(surface, entity_name, disable)
     end
 end
 
-add_entity_at_location_handler("void-pylon-tuned", "black-hole")
+add_entity_at_location_handler("void-pylon-tuned", "oratl")

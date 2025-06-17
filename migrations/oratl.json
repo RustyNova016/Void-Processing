@@ -1,0 +1,18 @@
+{
+    "space-location": [
+        [
+            "black-hole",
+            "oratl"
+        ],
+        [
+            "black-hole-approach",
+            "oratl-approach"
+        ]
+    ],
+    "space-connection": [
+        [
+            "approach-black-hole",
+            "approach-oratl"
+        ]
+    ]
+}

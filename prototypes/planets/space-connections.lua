@@ -6,7 +6,7 @@ local to_black_hole_approach_asteroids =
     probability_on_range_huge =
     {
         { position = 0.001, probability = 0.00125, angle_when_stopped = asteroid_util.huge_angle },
-        { position = 0.9,   probability = 0.025,    angle_when_stopped = asteroid_util.huge_angle }
+        { position = 0.9,   probability = 0.025,   angle_when_stopped = asteroid_util.huge_angle }
     },
 
     type_ratios               =
@@ -23,24 +23,24 @@ local to_black_hole_asteroids =
     probability_on_range_chunk  =
     {
         { position = 0.001, probability = 0.0,   angle_when_stopped = asteroid_util.chunk_angle },
-        { position = 0.30, probability = 0.0,   angle_when_stopped = asteroid_util.chunk_angle },
-        { position = 0.50, probability = 0.015, angle_when_stopped = asteroid_util.chunk_angle },
+        { position = 0.30,  probability = 0.0,   angle_when_stopped = asteroid_util.chunk_angle },
+        { position = 0.50,  probability = 0.015, angle_when_stopped = asteroid_util.chunk_angle },
         { position = 0.70,  probability = 0.0,   angle_when_stopped = asteroid_util.chunk_angle },
-        { position = 0.90, probability = 0.0,   angle_when_stopped = asteroid_util.chunk_angle }
+        { position = 0.90,  probability = 0.0,   angle_when_stopped = asteroid_util.chunk_angle }
     },
     probability_on_range_medium = {
         { position = 0.001, probability = 0,     angle_when_stopped = asteroid_util.medium_angle },
-        { position = 0.20, probability = 0,     angle_when_stopped = asteroid_util.medium_angle },
-        { position = 0.40, probability = 0.015, angle_when_stopped = asteroid_util.medium_angle },
-        { position = 0.60, probability = 0,     angle_when_stopped = asteroid_util.medium_angle },
-        { position = 0.90, probability = 0,     angle_when_stopped = asteroid_util.medium_angle }
+        { position = 0.20,  probability = 0,     angle_when_stopped = asteroid_util.medium_angle },
+        { position = 0.40,  probability = 0.015, angle_when_stopped = asteroid_util.medium_angle },
+        { position = 0.60,  probability = 0,     angle_when_stopped = asteroid_util.medium_angle },
+        { position = 0.90,  probability = 0,     angle_when_stopped = asteroid_util.medium_angle }
     },
     probability_on_range_big    =
     {
-        { position = 0.001,  probability = 0,     angle_when_stopped = asteroid_util.big_angle },
-        { position = 0.30, probability = 0.015, angle_when_stopped = asteroid_util.big_angle },
-        { position = 0.50, probability = 0,     angle_when_stopped = asteroid_util.big_angle },
-        { position = 0.90, probability = 0,     angle_when_stopped = asteroid_util.big_angle }
+        { position = 0.001, probability = 0,     angle_when_stopped = asteroid_util.big_angle },
+        { position = 0.30,  probability = 0.015, angle_when_stopped = asteroid_util.big_angle },
+        { position = 0.50,  probability = 0,     angle_when_stopped = asteroid_util.big_angle },
+        { position = 0.90,  probability = 0,     angle_when_stopped = asteroid_util.big_angle }
     },
 
     -- type_ratios                 =
@@ -52,8 +52,8 @@ local to_black_hole_asteroids =
     probability_on_range_huge   =
     {
         { position = 0.001, probability = 0.025, angle_when_stopped = asteroid_util.huge_angle },
-        { position = 0.2,   probability = 0.0,  angle_when_stopped = asteroid_util.huge_angle },
-        { position = 0.9,   probability = 0.0,  angle_when_stopped = asteroid_util.huge_angle }
+        { position = 0.2,   probability = 0.0,   angle_when_stopped = asteroid_util.huge_angle },
+        { position = 0.9,   probability = 0.0,   angle_when_stopped = asteroid_util.huge_angle }
     },
 
     type_ratios                 =
@@ -90,7 +90,7 @@ data:extend({
         name = "solar-system-edge-approach",
         subgroup = "planet-connections",
         from = "solar-system-edge",
-        to = "black-hole-approach",
+        to = "oratl-approach",
         order = "f",
         length = 130000,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(to_black_hole_approach_asteroids)
@@ -99,8 +99,8 @@ data:extend({
         type = "space-connection",
         name = "approach-black-hole",
         subgroup = "planet-connections",
-        from = "black-hole-approach",
-        to = "black-hole",
+        from = "oratl-approach",
+        to = "oratl",
         order = "g",
         length = 20000,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(to_black_hole_asteroids)
@@ -109,7 +109,7 @@ data:extend({
         type = "space-connection",
         name = "approach-shattered-planet",
         subgroup = "planet-connections",
-        from = "black-hole-approach",
+        from = "oratl-approach",
         to = "shattered-planet",
         order = "h",
         length = 3900000,

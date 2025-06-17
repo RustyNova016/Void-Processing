@@ -11,13 +11,13 @@ data:extend({
         effects = {
             {
                 type = "unlock-space-location",
-                space_location = "black-hole-approach",
+                space_location = "oratl-approach",
                 use_icon_overlay_constant = true
             },
 
             {
                 type = "unlock-space-location",
-                space_location = "black-hole",
+                space_location = "oratl",
                 use_icon_overlay_constant = true
             },
             lib.technology.unlock_recipe("void-pylon-tuned")

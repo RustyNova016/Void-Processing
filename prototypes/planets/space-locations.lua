@@ -4,7 +4,7 @@ local lib = require("lib")
 data:extend({
     {
         type = "space-location",
-        name = "black-hole",
+        name = "oratl",
         icon = lib.icon("black-hole"),
         starmap_icon = lib.icon("black-hole"),
         starmap_icon_size = 64,
@@ -22,7 +22,7 @@ data:extend({
     ---@type SpaceLocationPrototype
     {
         type = "space-location",
-        name = "black-hole-approach",
+        name = "oratl-approach",
         icon = lib.icon("black-hole-approach"),
         starmap_icon = lib.icon("black-hole-approach"),
         starmap_icon_size = 64,
